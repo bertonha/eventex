@@ -1,0 +1,8 @@
+\.py[co]$
+
+bin
+build
+include
+lib
+local
+scripts
