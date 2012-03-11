@@ -1,8 +1,9 @@
-\.py[co]$
+*.pyc
+*.pyo
 
-bin
-build
-include
-lib
-local
-scripts
+bin/
+build/
+include/
+lib/
+local/
+scripts/
