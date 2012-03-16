@@ -1,9 +1,4 @@
 *.pyc
 *.pyo
 
-bin/
-build/
-include/
-lib/
-local/
-scripts/
+virtenv/

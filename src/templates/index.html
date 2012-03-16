@@ -1,18 +1,27 @@
-<!DOCTYPE html">
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <title>EventoX</title>
-</head>
-<body>
-    <header id="page-header">
-        <img src="{{ STATIC_URL }}img/logo.png" />
-    </header>
-    <section id="page-content">
-        <p>Hello World!</p>
-    </section>
-    <footer id="page-footer">
-        <p>DJANGO</p>
-    </footer>
-</body>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link type="image/x-icon" href="{{ STATIC_URL }}favicon.ico" rel="icon" />
+
+        <title>EventeX</title>
+
+        <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <h1 id="logo">EventeX</h1>
+            </header>
+            <div id="content">
+                <h1>Bem-vindo ao EventeX!</h1>
+                <p>Você não pode perder essa oportunidade!</p>
+                <p>Abertura das inscrições em 18 de Março de 2012.</p>
+                <p>Para dúvidas e mais informações entre em contato com <a href="mailto:eventex@eventex.com.br"> eventex@eventex.com.br</a></p>
+            </div>
+            <footer>
+                <p>&copy; 2012. <a rel="license" href="http://eventex-ghostbr.herokuapp.com">EventeX</a>, some rights reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>
