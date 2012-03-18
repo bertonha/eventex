@@ -1,4 +1,9 @@
 *.pyc
 *.pyo
 
+database.db
+.pydevproject
+.project
+
+.settings/
 virtenv/
