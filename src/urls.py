@@ -5,12 +5,11 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import admin
 admin.autodiscover()
 
-import core.views
-import subscriptions.urls
 
 urlpatterns = patterns('',
-    (r'^$', core.views.homepage),
-    (r'^subscription/', include(subscriptions.urls)),
+    (r'^$', 'core.views.homepage'),
+    (r'^subscription/', include('subscriptions.urls',
+                                namespace='subscriptions')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
