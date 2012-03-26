@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 from django.conf import settings
 from django.core.mail import send_mail
 from django.core.urlresolvers import reverse
@@ -33,7 +35,7 @@ def create(request):
     subscription = form.save()
     send_mail(
         subject=u'Cadastro com Sucesso',
-        message=u'Obrigado %s pela sua inscrição',
+        message=u'Obrigado %s pela sua inscrição' % subscription.name,
         from_email=settings.DEFAULT_FROM_EMAIL,
         recipient_list=[subscription.email]
     )
@@ -43,4 +45,6 @@ def create(request):
 
 def success(request, pk):
     subscription = get_object_or_404(Subscription, pk=pk)
+    context = RequestContext(request,{'subscription': subscription})
+    return render_to_response('subscriptions/success.html', context)
     

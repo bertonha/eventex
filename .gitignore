@@ -1,7 +1,7 @@
 *.pyc
 *.pyo
 
-database.db
+src/database.db
 .pydevproject
 .project
 
