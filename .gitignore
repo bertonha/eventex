@@ -6,4 +6,6 @@ database.db
 .project
 
 .settings/
-virtenv/
+bin/
+lib/
+include/
