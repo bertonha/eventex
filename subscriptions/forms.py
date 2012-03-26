@@ -6,4 +6,4 @@ class SubscritionForm(forms.ModelForm):
 
     class Meta:
         model = Subscription
-        exclude = ('created_at',)
+        exclude = ('created_at', 'paid')
